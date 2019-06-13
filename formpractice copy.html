@@ -1,0 +1,31 @@
+<!doctype html> 
+<html>
+	<head>	
+	</head>
+	<body>
+		<h1>Sign Up!</h1>
+		<form name="myForm" onsubmit="return formValidation()">
+			First name:<br>
+			<input type="text" name="fname"><br>
+			Last name:<br>
+			<input type="text" name="lastname"><br>
+			<br>
+			<input type="submit" value="Submit">
+		</form>	
+
+		<p>A Batman who laughs, is a Batman who always wins...</p>
+
+		<script>
+			const formValidation = () => {
+				const x = document.forms["myForm"]["fname"].value;
+				if (x == ""){
+					alert("Looks like you missed a spot!");
+					return false;
+				}
+			}
+
+		</script>
+	</body>
+
+
+</html>
